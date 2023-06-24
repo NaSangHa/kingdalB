@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.study.springboot.dao.IRestaurantDAO">
+
+	<select id="getRestaurantByRid" resultType="com.study.springboot.dto.RestaurantDTO">
+		select * from restaurant where rid = #{param1 }
+	</select>
+	<select id="getAllRestaurantByCategory" resultType="com.study.springboot.dto.RestaurantDTO">
+		select * from restaurant where rcategory = #{param1 }
+	</select>
+	
+		
+</mapper>

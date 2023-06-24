@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.study.springboot.dao.IReviewDAO">
+
+	<select id="getMyReviewCntById" resultType="com.study.springboot.dto.ReviewDTO">
+		select * from review where rvwriter = #{param1 }
+	</select>
+	<select id="getAvgStarByRid" resultType="_double">
+		select avg(rvgrade) from review group by rid having rid = #{param1 }
+	</select>
+	<select id="getTotalReviewByRid" resultType="_int">
+		select count(*) from review where rid = #{param1 }
+	</select>
+	<select id="getStarCntByRG" resultType="_int">
+		select count(*) from review where rid = #{param1 } and rvgrade = #{param2 }
+	</select>
+	<select id="getAllReviewCardByRid" resultType="com.study.springboot.dto.ReviewDTO">
+		select * from review where rid = #{param1 } order by rvdate desc
+	</select>
+	<select id="getHotRestaurantRid" resultType="string">
+		<![CDATA[
+		select * from (select rid from review group by rid order by avg(rvgrade) desc) where rownum <= 5
+		]]>
+	</select>
+	
+		
+</mapper>

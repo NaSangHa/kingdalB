@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.study.springboot.dao.IOrderHistoryDetailDAO">
+
+	<select id="getOrderHistoryDetailByOid" resultType="com.study.springboot.dto.OrderHistoryDetailDTO">
+		select * from orderhistorydetail where orderid = #{param1 }
+	</select>
+	<delete id="deleteOrderHistoryDetailByOid">
+		delete from orderhistorydetail where orderid = #{param1 }
+	</delete>
+	<insert id="insertOrderHistoryDetail">
+		insert into orderhistorydetail values (#{param1 }, #{param2 }, #{param3 }, #{param4 }, #{param5 })
+	</insert>
+		
+</mapper>

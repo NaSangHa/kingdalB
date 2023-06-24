@@ -1,0 +1,65 @@
+name: project05
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.1 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # 스프링부트 통신
+  http: ^0.13.4 
+  # 메모리 값 기억(저장)
+  shared_preferences: ^2.0.15
+  # 사진 슬라이더
+  carousel_slider: ^4.1.1
+  # 카카오 로그인
+  kakao_flutter_sdk_user: ^1.2.2
+  # 구글 로그인
+  google_sign_in: ^5.4.1
+  # 파이어베이스 Auth
+  firebase_auth: ^3.9.0
+  firebase_core: ^1.22.0
+  # 구글 지도
+  geolocator: ^7.4.0
+  geocoding: ^2.0.0
+  # 부트페이
+  bootpay: ^4.3.2
+  bootpay_bio: ^4.3.6 # 생체인증 결제 사용시
+  # 네이버 로그인
+  flutter_naver_login: ^1.6.0
+
+
+  cupertino_icons: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

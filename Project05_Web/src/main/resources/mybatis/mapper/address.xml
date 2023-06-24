@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.study.springboot.dao.IAddressDAO">
+
+	<select id="getAdaptAddressById" resultType="com.study.springboot.dto.AddressDTO">
+		select * from address where id = #{param1 } and adapt = 1
+	</select>
+	<insert id="insertInitAddres">
+		insert into address values (#{param1}, address_seq.nextval, #{param2}, #{param3}, '주소를', '등록해주세요.', 0, 0, #{param4})
+	</insert>
+	<select id="getAllAddressById" resultType="com.study.springboot.dto.AddressDTO">
+		select * from address where id = #{param1} order by adapt desc, aid
+	</select>
+	<update id="updateAdaptAddress">
+		update address set adapt = 1 where id = #{param1 } and aid = #{param2 }
+	</update>
+	<update id="updateAdaptElseAddress">
+		update address set adapt = 0 where id = #{param1 } and aid != #{param2 }
+	</update>
+	<select id="getAddressByAid" resultType="com.study.springboot.dto.AddressDTO">
+		select * from address where aid = #{param1}
+	</select>
+	<update id="upadteAllAddressAdaptZero">
+		update address set adapt = 0 where id = #{param1 }
+	</update>	
+	<insert id="insertAddress">
+		insert into address values (#{param1}, address_seq.nextval, 'normal', #{param2}, #{param3}, #{param4}, 0, 0, 1)
+	</insert>
+	<insert id="insertAddress2">
+		insert into address values (#{param1}, address_seq.nextval, 'normal', #{param2}, #{param3}, #{param4}, #{param5}, #{param6}, 1)
+	</insert>
+	<delete id="deleteAddressByAid">
+		delete from address where aid = #{param1 }
+	</delete>
+		
+</mapper>

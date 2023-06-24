@@ -1,0 +1,96 @@
+/* MainColor = rgb(239, 108, 0) */
+/* 
+.profile{
+    width: 75px;
+    height: 75px; 
+    border-radius: 70%;
+    overflow: hidden;
+    margin-left: auto; margin-right: auto;
+}
+.profile > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+*/
+.pageTitle{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(239, 108, 0);
+    margin-top: 40px; margin-bottom: 20px;
+}
+
+/* 이번주 인기 맛집 내용 */
+.LikeCardWrap{
+    margin-right: 20px; margin-bottom: 20px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.LikeCardImg{
+    background-color: blue;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.LikeCardImg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+.LikeBtn{
+    position: absolute;
+    top: 10px; right: 10px;
+}
+.LikeBtn > img {
+    width: 50px; height: 50px;
+    cursor: pointer;
+}
+.LikeCardContentWrap{
+    padding: 15px;
+}
+.LikeCardContentLine{
+    margin-bottom: 10px;
+}
+.LikeCardContent_name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.LikeCardContent_star{
+    font-size: 12px;
+    font-weight: bold;
+}
+.LikeCardContent_star >img{
+    height: 20px;
+}
+.LikeCardContent_time{
+    font-size: 13px;
+}
+.LikeCardContent_tip{
+    font-size: 13px;
+}
+
+/* 찜 목록 없을 때 */
+.emptyContent{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding-top: 20px; padding-bottom: 20px;
+    font-size: 35px;
+}
+.emptyContent > img{
+    margin-bottom: 20px;
+    height: 150px;
+}
+
+
+.exam1{
+    position: relative;
+}
+.exam2{
+    position: absolute; 
+    top: 10px;  left: 10px;
+}
+.exam2 > img{
+    width: 30px; height: 30px;
+}

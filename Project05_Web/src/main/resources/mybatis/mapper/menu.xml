@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.study.springboot.dao.IMenuDAO">
+
+	<select id="getAllMCategory" resultType="string">
+		select distinct(mcategory) from menu where rid = #{param1 }
+	</select>
+	<select id="getAllMenuByCategory" resultType="com.study.springboot.dto.MenuDTO">
+		select * from menu where rid = #{param1 } and mcategory = #{param2 }
+	</select>
+	<select id="getOneMenuByMid" resultType="com.study.springboot.dto.MenuDTO">
+		select * from menu where mid = #{param1 }
+	</select>
+	
+			
+</mapper>

@@ -1,0 +1,148 @@
+/* MainColor = rgb(239, 108, 0) */
+/* 
+.profile{
+    width: 75px;
+    height: 75px; 
+    border-radius: 70%;
+    overflow: hidden;
+    margin-left: auto; margin-right: auto;
+}
+.profile > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+*/
+.pageTitle{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(239, 108, 0);
+    margin-top: 40px; margin-bottom: 20px;
+}
+/* 주문 세부정보 */
+.orderContentWrap{
+    padding: 30px;
+    background-color: rgba(239, 108, 0, 0.1);
+    margin-right: 20px;
+}
+.orderMethodWrap{
+    margin-bottom: 20px;
+}
+.currentOrderMethod{
+    font-size: 18px;
+}
+.currentOrderMethod > span{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(239, 108, 0);
+}
+.secondOrderMethod{
+    cursor: pointer;
+}
+.orderAddressWrap{
+    margin-bottom: 50px;
+}
+.orderAddresstitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.orderAddress{
+    font-size: 20px;
+    cursor: pointer;
+}
+#userAddress_cart{
+	border: none;
+    background-color: transparent;
+	
+}
+.orderAddressSelectBtn > img{
+    height: 20px;
+}
+.orderPriceWrap{
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+.orderPriceTitle{
+    font-size: 20px;
+}
+.orderPrice{
+    font-size: 20px;
+    font-weight: bold;
+}
+.orderFinalPrcie{
+    color: rgb(239, 108, 0);
+}
+.orderBtnWrap{
+    margin-top: 10px;
+    padding: 20px;
+}
+.orderBtn{
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: rgb(239, 108, 0);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* 식당로고, 이름 */
+.cartRestaurantHead{
+    border-bottom: 2px solid grey;
+    margin-bottom: 30px;
+}
+.cartRestaurantLogo > img{
+    height: 75px;
+}
+.cartRestaurantName{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* 장바구니 내용 */
+.cartFoodImgWrap{
+    margin-bottom: 20px;
+}
+.cartFoodImg{
+    overflow: hidden;
+}
+.cartFoodImg > img {
+    height: 120px;
+}
+.cartFoodContentWrap{
+    padding: 10px;
+    padding-right: 40px;
+}
+.cartFoodName{
+    font-size: 25px;
+}
+.cartFoodDel > img{
+    height: 20px;
+    cursor: pointer;
+}
+.cartFoodOption{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: grey;
+}
+.cartFoodCount{
+    font-size: 25px;
+    font-weight: bold;
+}
+.cartFoodPrice{
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(239, 108, 0);
+}
+
+/* 장바구니 목록 없을 때 */
+.emptyContent{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.03);
+    padding-top: 20px; padding-bottom: 20px;
+    font-size: 35px;
+}
+.emptyContent > img{
+    margin-bottom: 20px;
+    height: 150px;
+}

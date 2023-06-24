@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.study.springboot.dao.IMenuOptionDAO">
+
+	<select id="getMenuOptionByRMid" resultType="com.study.springboot.dto.MenuOptionDTO">
+		select * from menuoption where rid = #{param1 } and mid = #{param2 }
+	</select>
+	<select id="getMenuOptionCategoryByRM" resultType="string">
+		select distinct(moptioncategory) from menuoption where rid = #{param1 } and mid = #{param2 }
+	</select>
+	<select id="getMenuOptionCategoryByMid" resultType="string">
+		select distinct(moptioncategory) from menuoption where mid = #{param1 }
+	</select>
+	<select id="getAllMenuOptionByCategory" resultType="com.study.springboot.dto.MenuOptionDTO">
+		select * from menuoption where rid = #{param1 } and mid = #{param2 } and moptioncategory = #{param3 }
+	</select>
+	<select id="getAllMenuOptionByMOC" resultType="com.study.springboot.dto.MenuOptionDTO">
+		select * from menuoption where mid = #{param1 } and moptioncategory = #{param2 }
+	</select>
+	
+			
+</mapper>

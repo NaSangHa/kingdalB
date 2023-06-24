@@ -1,0 +1,100 @@
+/* MainColor = rgb(239, 108, 0) */
+
+/* 카테고리 */
+.categoryWrap{
+    margin-left: 50px; margin-right: 50px;
+    margin-top: 50px; margin-bottom: 50px;
+    padding-top: 20px; padding-bottom: 20px;
+}
+.categoryIcon {
+    height: 75px;
+}
+.categoryIconName{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* 이번주 인기 맛집 */
+.hotTitleWrap{
+    margin-left: 150px; margin-right: 150px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.hotITitleIcon > img{
+    height: 50px;
+}
+.hotTitle{
+    margin-left: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(239, 108, 0);
+}
+
+/* 이번주 인기 맛집 내용 */
+.hotContentWrap{
+    cursor: pointer;
+}
+.hotContentCardWrap{
+    padding: 0px;
+    margin-right: 15px; margin-bottom: 10px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.hotContentCardImgWrap{
+    height: 200px;
+    overflow: hidden;
+    margin-left: auto; margin-right: auto;
+    margin-bottom: 10px;
+}
+.hotContentCardImgWrap > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hotContentCardLine{
+    padding-left: 15px; padding-right: 15px;
+    padding-top: 10px;   padding-bottom: 10px;
+}
+.hotContentCard_name{
+    font-size: 25px;
+    font-weight: bold;
+    height: 30px; line-height: 30px;
+}
+.hotContentCard_star{
+    height: 30px; line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+.hotContentCard_star > img{
+    height: 20px;
+}
+.hotContentCard_time{
+    font-size: 15px;
+}
+.hotContentCard_time > img{
+    height: 20px;
+}
+.hotContentCard_tip{
+    font-size: 13px;
+}
+.hotContentCard_minprice{
+    font-size: 13px;
+}
+
+/* 이번주 인기 맛집 */
+.noticeTitleeWrap{
+    margin-left: 150px; margin-right: 150px;
+    margin-top: 75px; margin-bottom: 20px;
+    display: flex;
+}
+.noticeTitleIcon > img{
+    height: 50px;
+}
+.noticeTitle{
+    margin-left: 10px;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(239, 108, 0);
+}

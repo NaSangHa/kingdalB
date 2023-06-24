@@ -1,0 +1,193 @@
+/* MainColor = rgb(239, 108, 0) */
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0px; padding: 0px;
+}
+.row {
+    margin: 0px; padding: 0px;
+}
+.col {
+    margin: 0px; padding: 0px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.test0{
+    background-color: yellow;
+}
+.test1{
+    background-color: rgba(255, 0, 0, 0.3);
+}
+.test2{
+    background-color: rgba(0, 255, 0, 0.3);
+}
+.test3{
+    background-color: rgba(0, 0, 255, 0.3);
+}
+.test4{
+    background-color: aquamarine;
+}
+/* ---------------------------------------------------- */
+.alertDeliveryWrap1{
+    height: 60px; 
+    background-color: rgb(239, 108, 0);
+    padding: 0px;
+    border-radius: 0px 0px 20px 20px ;
+    display: none;
+}
+.alertDelivery{
+    
+    line-height: 60px;
+    font-size: 25px;
+    color: white;
+}
+.alertDelivery > span{
+    margin-left: 20px;
+    font-size: 18px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.navWrap {
+    padding-top: 20px; padding-bottom: 20px;
+    border-bottom: 3px solid rgb(239, 108, 0);
+}
+.navLogo{
+    height: 100px;
+}
+
+.leftNavMenu{
+    display: flex;
+    margin-left: 80px;
+    width: fit-content;
+    background-color: transparent;
+    border: none;
+}
+.leftNavIcon > img{
+    height: 35px;
+}
+.leftNavContent {
+    margin-top: auto; margin-bottom: auto;
+    margin-left: 10px; margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.rightNavMenu{
+    display: flex;
+}
+.rightNavMenuBtn{
+    background-color: transparent;
+    border: none;
+}
+.rightNavProfileImg{
+    width: 40px;
+    height: 40px; 
+    border-radius: 70%;
+    overflow: hidden;
+    margin-left: auto; margin-right: auto;
+    margin-bottom: 10px;
+}
+.rightNavProfileImg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.rightNavIcon{
+    width: 40px;
+    margin-bottom: 10px;
+}
+.rightNavIconName{
+    font-size: 12px;
+    font-weight: bold;
+}
+.bottomSpace{
+    height: 150px;
+}
+
+
+
+/* 주소 모달 */
+.modalHead{
+    font-size: 18px;
+    color: grey;
+}
+.addAddressTitleWrap{
+    
+}
+.addAddressTitle{
+    font-size: 18px;
+    font-weight: bold;
+}
+.addAddressBtn{
+    padding: 3px;
+    width: 75px;
+    line-height: 25px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.addAddressBtn :hover{
+    background-color: grey;
+    color: white;
+}
+.addressSearchdWrap{
+    margin-top: 20px ; margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.addressSearchIcon > img{
+    height: 20px;
+}
+.addressInputWrap{
+    margin-bottom: 10px;
+}
+.addressInputTitle{
+    font-weight:bold;
+    color: grey;
+    border-right: 1px solid grey;
+}
+.addressInput{
+    margin-left: 20px;
+    color: rgb(239, 108, 0);
+    background-color: transparent;
+    border: none;
+}
+.boundaryLine{
+    height: 0.5px;
+    background-color: grey;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.addressListWrap{
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.addressIcon > img{
+    height: 40px;
+}
+.addressTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.addressContentWrap{
+    margin-left: 10px;
+}
+.addressContent{
+    font-size: 15px;
+    color: grey;
+}
+.addressAdapt{
+    color: rgb(239, 108, 0);
+    font-weight: bold;
+}

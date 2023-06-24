@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+	
+<mapper namespace="com.study.springboot.dao.IOrderHistoryDAO">
+
+	<select id="getRecentOrderCntById" resultType="com.study.springboot.dto.OrderHistoryDTO">
+		select * from orderhistory where id = #{param1 } and orderdate between sysdate-3 and sysdate
+	</select>
+	<select id="getAllOrderHistoryById" resultType="com.study.springboot.dto.OrderHistoryDTO">
+		select * from orderhistory where id = #{param1 } order by orderdate desc
+	</select>
+	<delete id="deleteOrderHistoryByOid">
+		delete from orderhistory where orderid = #{param1 }
+	</delete>
+	<select id="getOrderHistoryByOid" resultType="com.study.springboot.dto.OrderHistoryDTO">
+		select * from orderhistory where orderid = #{param1 }
+	</select>
+	<insert id="insertOrderHistory">
+		insert into orderhistory values (#{param1 }, #{param2 }, #{param3 }, orderhistory_seq.nextval, sysdate, #{param4 }, #{param5 })
+	</insert>
+	<select id="getRecentOrderHistoryByid" resultType="com.study.springboot.dto.OrderHistoryDTO">
+		select * from (select * from orderhistory where id = #{param1 } and rid = #{param2 } order by orderdate desc) where rownum = 1 
+	</select>
+	
+		
+</mapper>

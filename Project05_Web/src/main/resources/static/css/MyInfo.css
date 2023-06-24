@@ -1,0 +1,301 @@
+/* MainColor = rgb(239, 108, 0) */
+/* 
+.profile{
+    width: 75px;
+    height: 75px; 
+    border-radius: 70%;
+    overflow: hidden;
+    margin-left: auto; margin-right: auto;
+}
+.profile > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+*/
+.profileWrap{
+    margin-top: 75px;
+}
+.profileImg{
+    width: 150px;
+    height: 150px; 
+    border-radius: 70%;
+    overflow: hidden;
+    margin-left: auto; margin-right: auto;
+}
+.profileImg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nicknameModifyField{
+    height: 40px;
+}
+.nicknameModifyBtn{
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: rgb(239, 108, 0);
+    cursor: pointer;
+}
+.nickName{
+    margin-top: 25px; margin-bottom: 25px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.porfileimgInput{
+    margin-bottom: 20px;
+}
+.nickName > img{
+    margin-left: 10px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* 최근배달, 찜목록, 내가쓴리뷰 */
+.myHistoryWrap{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+.recentDeliveryWrap{
+    margin-left:  60px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+.recentDelivery{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.recentDeliveryTitle{
+    font-size: 18px;
+}
+
+/* 내정보 관리 */
+.myInfoEmailWrap{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.myInfoEmailTitle{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(239, 108, 0);
+}
+.myInfoEmailContent{
+    padding-top: 10px; padding-bottom: 10px;
+    font-size: 25px;
+    
+}
+.myInfoPhoneWrap{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.myInfoPhoneTitle{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(239, 108, 0);
+}
+.myInfoPhoneContent{
+    padding-top: 10px; padding-bottom: 10px;
+    font-size: 25px;   
+}
+.myInfoPhoneModify{
+    font-size: 18px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.resignMemberWrap{
+    padding: 10px;
+}
+.resignMemberBtn{
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+}
+
+
+
+
+/* 주소관리 */
+.menuListWrap{
+    padding: 0px;
+}
+.unSelectMenu{
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+.selectMenu{
+    background-color: rgb(239, 108, 0);
+    color: white;
+    border: none;
+}
+
+.myInfoContentWrap{
+    padding: 20px;
+    border: 1px solid grey;
+}
+.myInfoContentTitle{
+    font-weight: bold;
+    font-size: 20px;
+}
+.myInfoContentHead{
+    margin-bottom: 20px;
+}
+.addAddress{
+    padding: 5px;
+    width: 100px;
+    background-color: white;
+    border: 1px solid rgb(239, 108, 0);
+    border-radius: 20px;
+    color: rgb(239, 108, 0);
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.addressWrap{
+    margin-bottom: 20px;
+}
+
+.addressWrap:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.addressDelBtn > img{
+    height: 15px;
+    cursor: pointer;
+}
+.addressIcon > img{
+    height: 35px;
+}
+.addressTitle{
+    font-weight: bold;
+    text-align: start;
+    font-size: 20px;
+}
+.addressDetail{
+    font-size: 12px;
+    color: grey;
+    text-align: start;
+}
+.adapt{
+    font-size: 15px;
+    color: rgb(239, 108, 0);
+}
+
+/* 주문내역 */
+.orderHistoryWrap{
+    background-color: rgba(0, 0, 0, 0.03);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.orderHistoryHead{
+    margin-bottom: 10px;
+}
+.orderDate{
+    font-size: 18px;
+    color: grey;
+    padding-left: 20px;
+}
+.orderDetailBt{
+    padding: 5px;
+    width: 100px;
+    border: 1px solid grey;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.orderHistoryDelBtn > img {
+    height: 20px;
+    cursor: pointer;
+}
+.orderRestaurantLogo > img{
+    height: 75px;
+}
+.orderRestaurantName{
+    width: fit-content;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.orderContent{
+    color: grey;
+}
+
+/* 주문내역 상세 모달 */
+.ohModalHeader{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.ohRestaurantTitle{
+    margin-bottom: 20px;
+}
+.ohRestaurantLogo > img{
+    height: 65px;
+}
+.ohRestaurantLogo{
+    font-size: 30px;
+}
+.ohOederDate{
+    font-size: 20px;
+    color: grey;
+    margin-bottom: 10px;
+    padding-left: 50px;
+}
+.ohOederLocation{
+    font-size: 20px;
+    color: grey;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+.ohFoodWrap{
+    background-color: rgba(0, 0, 0, 0.03);
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.ohFoodTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.ohFoodOption{
+    padding-left: 10px;
+}
+.ohFoodPrice{
+    font-size: 20px;
+    font-weight: bold;
+}
+.ohPriceTitle{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding-left: 20px; padding-right: 20px;
+}
+.ohPriceContentWrap{
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 10px;
+}
+.ohPriceContent{
+    font-size: 20px;
+}
+.ohPriceContent2{
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 100px;
+}
+.ohdivdier{
+    height: 2px;
+    background-color: grey;
+    margin-bottom: 10px;
+}
+.ohBottomSpace{
+    height: 30px;
+}
